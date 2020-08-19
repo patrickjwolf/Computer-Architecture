@@ -3,9 +3,9 @@
 """Main."""
 
 import sys
-from cpu import *
+from Day_1_Assignment import *
 
 cpu = CPU()
 
-cpu.load()
+Day_1_Assignment.load()
 cpu.run()
