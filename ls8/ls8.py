@@ -3,9 +3,12 @@
 """Main."""
 
 import sys
-from Day_1_Assignment import *
+from cpu import *
 
 cpu = CPU()
 
-Day_1_Assignment.load()
-cpu.run()
+try:
+    cpu.load(sys.argv[1])
+    cpu.run()
+except IndexError:
+    print("You need a file name to continue")
